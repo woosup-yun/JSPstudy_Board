@@ -12,7 +12,12 @@
   
   <!-- 웹 어플리케이션 시작 할 때 필요한 리스너 추가 -->
   <listener>
+  	<!-- 드라이버 로딩 -->
   	<listener-class>jdbc.DBCPInitListener</listener-class>
+  </listener>
+  <listener>
+  	<!-- 루트 경로 저장 -->
+  	<listener-class>util.AddContextPathListener</listener-class>
   </listener>
   
   <!-- 웹 어플리케이션 초기화 파라미터 추가 -->
