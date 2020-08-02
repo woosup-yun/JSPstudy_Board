@@ -16,26 +16,14 @@
 <title>Insert title here</title>
 </head>
 <body>
-<form action="changePwd.do" method="post">
-<p>
-	현재 암호 : <br />
-	<input type="password" name="curPwd" />
-	<c:if test="${errors.curPwd }">현재 암호를 입력하세요.</c:if>
-	<c:if test="${errors.badCurPwd }">현재 암호가 일치하지 않습니다.</c:if>
-</p>
-<p>
-	새 암호 : <br />
-	<input type="password" name="newPwd"/>
-	<c:if test="${errors.newPwd }">새 암호를 입력하세요.</c:if>
-</p>
-<input type="submit" value="암호 변경"/>
-</form>
+게시글을 삭제했습니다.
+
+<br />
+
+<a href="${ctxPath }/article/list.do">[게시글 목록보기]</a>
+<a href="${ctxPath }/article/read.do?no=${modReq.articleNumber }">[게시글 내용보기]</a>
 </body>
 </html>
-
-
-
-
 
 
 
